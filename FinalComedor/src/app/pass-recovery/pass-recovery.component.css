@@ -1,0 +1,45 @@
+.img{
+    text-align: center;
+}
+
+.img-login{
+    position:fixed;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.form-control{
+    padding: 10px;
+    margin: 2vh 0;
+}
+
+.content-login{
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    left: 0px;
+    position: fixed;
+    bottom: 40px;
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+}
+.txt-bienvenida{
+    position: relative;
+    z-index: 10;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 2.5em;
+
+}
+
+small i{
+    color: grey;
+}

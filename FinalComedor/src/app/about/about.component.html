@@ -1,0 +1,72 @@
+<ngb-carousel *ngIf="images" class="img-responsive">
+
+  <ng-template ngbSlide>
+    <img src="assets/images/1.png" class="imgCenter" alt="Cinque Terre">
+    <div class="carousel-caption">
+
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img src="assets/images/2.png" class="imgCenter" alt="Random second slide">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img src="assets/images/3.png" class="imgCenter" alt="Random third slide">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img src="assets/images/4.png" class="imgCenter" alt="Random third slide">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <img src="assets/images/5.png" class="imgCenter" alt="Random third slide">
+    <div class="carousel-caption">
+    </div>
+  </ng-template>
+
+</ngb-carousel>
+
+  <div class="container">
+    <div class="container-fluid">
+
+<div class="fontTitle">
+  Welcome
+</div>
+
+<div class="fontSubTitle">
+  We are Team #1, we are very pleased to see you here...
+</div>
+
+
+
+    
+    <hr>
+    <div class="fontMembers">
+      Members:
+    </div>
+
+    <div class="textCommun">
+      El Horacio
+      <br> Jose Barron
+      <br> Ricardo Tovar
+      <hr>
+    </div>
+      <div class="fontContact " style="display: inline;">
+          Contact:
+        </div>
+        <div class="row centerImg" >
+            <div class="col-4 "><p><i class="fab fa-twitter "></i></p></div>
+            <div class="col-4 "><p><i class="fab fa-facebook-square"></i></p></div>
+            <div class="col-4 "><p alt="" (click)="openVerticallyCentered(content)" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><i class="fas fa-phone"></i></p></div>
+          </div>
+      
+    
+  </div>
+</div>

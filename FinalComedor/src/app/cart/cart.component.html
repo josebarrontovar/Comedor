@@ -1,0 +1,151 @@
+
+<!-- CONTENT -->
+<!-- <div class="container" *ngIf="platilosAll">
+  <h1 class="marTop20">Carrito</h1>
+  <hr>
+  <div class="article marTop20" *ngFor="let item of platilosAll">
+    <div id="dishContainer">
+      <div class="row">
+        <div class="col-4">
+          <img [src]="item.stew.image" class="dish" alt="foodImg" style="border: 1px solid #e7e7e7; border-radius: 10px;">
+        </div>
+        <div class="col-6">
+          <p class="marTop10"><b>{{item.stew.name}}</b></p>
+          <p class="marTop5">{{item.garrison.name}}</p>
+          <p>{{item.drink.name}}</p>
+        </div>
+        <div id="priceCol" class="col-2">
+          <p class="marTop38 marLeRiAuto">{{item.price}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom: 80px;"></div>
+</div> -->
+<!-- END CONTENT -->
+
+<!-- MODAL -->
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Pago con Tarjeta de Credito</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="step!=3">
+    <!-- <form *ngIf="step==1">
+      <div class="form-group">
+        <div class="input-group"> -->
+           <p>
+            Payment details
+          </p>
+          
+            <div class="row" style="text-align: center;">
+              <div class="col-3"> <i class="fab fa-cc-paypal fa-2x"></i> </div>
+              <div class="col-3"> <i class="fab fa-cc-visa fa-2x"></i> </div>
+              <div class="col-3"> <i class="fab fa-cc-amex fa-2x"></i> </div>
+              <div class="col-3"> <i class="fab fa-cc-mastercard fa-2x"></i> </div>
+            </div>
+          
+          <p> 
+              Cardholder Name
+            </p>
+            
+              <input type="text" class="form-control"  [(ngModel)]="valueName">
+              <div class="msgRed" *ngIf="vNameMsg">{{vNameMsg}}</div>
+              
+          <p>
+            Card Number
+          </p>
+          
+            <input type="number"  class="form-control"  [(ngModel)]="valueNumber">
+            <div  class="msgRed" *ngIf="vNumberMsg">{{vNumberMsg}}</div>
+   
+          <div class="row">
+          <div class="marTo  col-5" style="float: left;">
+              Expiry Date
+              <div class="fontDate">
+                  MM/YY
+              </div>
+          </div>
+          <!-- <div class="marTo col-2">
+              MM YY
+          </div>  -->
+          <div class="col-4"></div>
+          <div class="col-2">
+            CVV
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-7">
+              <input type="text"  class="widMax marTo form-control ">
+          </div>
+          <div class="col-4">
+              <input type="text"  class="widMax marTo form-control">
+          </div>
+          
+        
+        </div>
+
+
+
+        <!-- </div>
+      </div>
+    </form> -->
+  </div>
+  <div *ngIf="step==3">
+    <!-- <form *ngIf="step==2">
+      <div class="form-group">
+        <div class="input-group"> -->
+          Pago realizado correctamente, favor de recoger su pedido en cafeteria.
+        <!-- </div>
+      </div>
+    </form> -->
+  </div>
+  </div>
+  <div class="modal-footer">
+    <button *ngIf="step!=3" type="button" class="btn btn-success"  (click)="validateName()">Pagar</button>
+    <button *ngIf="step==3" type="button" class="btn btn-success" routerLink="/home">Aceptar</button>
+  </div>
+</ng-template>
+
+<!-- <pre>{{closeResult}}</pre>> -->
+
+
+<div class="content">
+  <div class="container-fluid" *ngIf="platilosAll">
+    
+    <div class="row">
+      <div class="col-12">
+          <h3>Shopping Cart</h3>
+          <hr>
+        <div class="card marTop20" *ngFor="let item of platilosAll">
+          <div style="text-align: center">
+              <h6 class="c-gray h6-gray">Comida</h6>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 d-flex align-items-center">
+                <img [src]="item.stew.image" class="dish" alt="foodImg" style="border: 1px solid #e7e7e7; border-radius: 10px;">
+              </div>
+              <div class="col-5">
+                <p class="c-gray">{{item.stew.name}}</p>
+                {{item.garrison.name}}
+                {{item.drink.name}}
+              </div>
+              <div class="col-3 d-flex align-items-center">
+                <p class="c-gray">${{item.stew.price + item.garrison.price + item.drink.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-success" (click)="open(content)" >Pago con Tarjeta</button>
+<div class="marTop80">
+
+</div>

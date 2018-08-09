@@ -1,0 +1,52 @@
+.imgSize {
+    
+  width: 415px;
+  height: 250px;
+ }
+.contentCarousel{
+  width: 415px;
+  height: 250px;
+}
+ .fontTitle{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    }
+
+    .textCommun{
+        font-size: 17px;
+        font-style: italic;
+        text-align: center;
+        margin: 15px;
+      }
+
+      .textContenido{
+        text-align: start;
+        font-size: 17px;
+      }
+
+      .fontTitleCont{
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: underline;
+        }
+
+        .btnAlign{
+          margin: end;
+        }
+
+.stewText{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.boxShadow{
+  -webkit-box-shadow: 9px 10px 22px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 10px 22px -12px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 10px #88888885;
+max-width: 385px;
+}

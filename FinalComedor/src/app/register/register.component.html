@@ -1,0 +1,39 @@
+<div class="content">
+  <div class="container-fluid" >
+      <div class="row">
+       <div class="col-12" style="margin: 0px; padding: 0px;">
+         <div class="img">
+           <h3 class="txt-bienvenida">Registro</h3>
+           <img src="assets/img/comida-login.jpg" class="img-login" alt="">
+         </div>
+        </div>
+      </div>
+
+      <div class="content-login">
+        <div class="row">
+          <div class="col-12">
+           <div class="form-group">
+             <p>Bienvenido</p>
+             <input class="form-control" type="text" placeholder="Nombre" [(ngModel)]="name">
+             <input class="form-control" type="text" placeholder="Apellido" [(ngModel)]="lastName">
+             <input class="form-control" type="text" placeholder="Correo" [(ngModel)]="email">
+             <input class="form-control" type="password" placeholder="Contraseña" [(ngModel)]="password">
+             <input class="form-control" type="password" placeholder="Repetir Contraseña" [(ngModel)]="passwordCheck">
+             <button class="btn male"><i class="fas fa-male"></i></button>
+             <button class="btn quest"><i class="fas fa-question"></i></button>
+             <button class="btn female"><i class="fas fa-female"></i></button>
+             
+           </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-4"><small class="twitter"><i class="fab fa-twitter"></i></small></div>
+        <div class="col-4"><small class="facebook"><i class="fab fa-facebook-square"></i></small></div>
+        <div class="col-4"><small class="phone"><i class="fas fa-phone"></i></small></div>
+      </div>
+      <button class="btn btn-success" (click)="Register()">Registrarme</button><br>
+      <small><a  routerLink="/login">Inicio</a></small>
+    </div>
+      
+  </div>
+</div>

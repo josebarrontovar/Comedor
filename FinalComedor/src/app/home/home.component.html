@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col">
+      <div class="img">
+          <img src="assets/img/comida-login.jpg" alt="" class="img-home">
+      </div>
+      <div class="col-12"> 
+        <h4 class="display-4">Bienvenido</h4>
+        <p class="lead"><hr class="my-4">
+        <p *ngIf="cartArray.length != 0" routerLink="/shoppingcart" style="background-color: lightgreen; text-align: center;">IR AL CARRITO</p> 
+      </div>
+      <div class="col-12 marTop20" *ngFor="let platillo of platiloAll; let i = index" (click)="goToDish(i)">
+        <div class="card">
+          <div class="img2">
+            <img class="card-img-top img-fluid img-card img-home" [src]="platillo.stew.image" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5>{{platillo.stew.name}}</h5>
+            <p>Servida con {{platillo.garrison.name}} y {{platillo.drink.name}}</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+

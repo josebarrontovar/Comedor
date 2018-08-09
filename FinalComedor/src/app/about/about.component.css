@@ -1,0 +1,58 @@
+
+
+
+
+.fontTitle{
+/* font-style: italic; */
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+/* text-decoration: underline; */
+}
+
+
+.fontSubTitle{
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 20px;
+    }
+
+    .imgCenter {
+        margin: auto;
+        /* max-width: 380px;
+        max-height: 500px; */
+        width: 100%;
+  /* max-height: 300px; */
+      }
+
+      .fontContact{
+        
+        font-weight: bold;
+        text-align: start;
+        font-size: 16px;
+        /* text-decoration: underline; */
+      }
+
+      .imgLeft{
+          align-items: flex-start;
+      }
+
+      .fontMembers{
+        font-weight: bold;
+        text-align: start;
+        font-size: 16px;
+        /* text-decoration: underline; */
+      }
+
+      .textCommun{
+        text-align: start;
+        font-size: 13px;
+        
+        /* font-style: italic; */
+      }
+     
+      .centerImg{
+        text-align: center;
+      }
+

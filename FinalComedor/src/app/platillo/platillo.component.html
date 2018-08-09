@@ -1,0 +1,67 @@
+
+
+<div style="position: relative;">
+  <div style="position: absolute; z-index: 1;" *ngIf="stewObject">
+
+
+      <ngb-carousel class="contentCarousel">
+
+          <ng-template ngbSlide>
+              <img src={{stewObject.image}} alt="" class="img-fluid imgSize" *ngIf="stewObject">
+            <div class="carousel-caption">
+            </div>
+          </ng-template>
+
+          <ng-template ngbSlide>
+              <img src={{garrisonObject.image}} alt="" class="img-fluid imgSize" *ngIf="garrisonObject">
+            <div class="carousel-caption">
+            </div>
+          </ng-template>
+
+          <ng-template ngbSlide>
+              <img src={{drinkObject.image}} alt="" class="img-fluid imgSize" *ngIf="drinkObject">
+            <div class="carousel-caption">
+            </div>
+          </ng-template>
+
+
+      </ngb-carousel>
+
+    <!-- <img src={{stewObject.image}} alt="" class="img-responsive imgSize"> -->
+  </div>
+  <div class="stewText boxShadow" style="position: absolute; left: 15px; top: 250px;  z-index: 3;">
+    <div *ngIf="stewObject" class="fontTitle">
+      {{stewObject.name}}
+    </div>
+    <div *ngIf="stewObject" class="textCommun">
+      
+      {{stewObject.description}}
+    </div>
+  </div>
+</div>
+
+<div class="container" style="position: absolute; left: 0px; top: 360px; z-index: 3;">
+  
+  <div class="fontTitleCont">
+    Contenido:
+  </div>
+
+  <div class="row">
+    <div class="col-6 textContenido">
+
+      <p> Guarnición:</p>
+      <p> Guiso:</p>
+      <p> Bebida:</p>
+      <p> Precio:</p>
+    </div>
+    <div class="col-6 textContenido" *ngIf="stewObject && garrisonObject && drinkObject">
+      <p> {{garrisonObject.name}}</p>
+      <p>{{stewObject.name}}</p>
+      <p>{{drinkObject.name}}</p>
+      <p>{{totalPrice}}</p>
+    </div>
+  </div>
+  <!-- <button class="btn btn-success " style="float: left;" >Agregar Extra</button> -->
+  <button (click)="goToCart()" class="btn btn-success " >Agregar a mi Carrito</button>
+
+</div>

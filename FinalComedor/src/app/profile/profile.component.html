@@ -1,0 +1,30 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col">
+        <div class="card">
+          <div class="img2">
+              <img class="card-img-top img-fluid img-card img-profile" src="assets/img/comida-login.jpg" alt="Card image cap">
+          </div>
+          <button class="btn btn-camera"><i class="fas fa-camera"></i></button>
+          <div class="card-body">
+            <input  class="form-control" type="text"  placeholder="Nombre" [(ngModel)]="name">
+            <input  class="form-control" type="text"  placeholder="Apellido" [(ngModel)]="lastName">
+            <input  class="form-control" type="number" placeholder="Edad" [(ngModel)]="age">
+            <select class="form-control" >
+              <option value="" disabled>Genero</option>
+              <option value="">Mujer</option>
+              <option value="">Hombre</option>
+              <option value="">Indefinido</option>
+            </select>
+            <button class="btn btn-success" (click)="UpdateUser()" >Guardar</button>
+            <br>
+   
+            <br>
+            <button class="btn btn-success" (click)="Close()" >Salir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
