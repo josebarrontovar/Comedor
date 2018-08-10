@@ -17,6 +17,7 @@ name:string;
 lastName:string;
 age:number;
 
+
 userId:string;
 
 userInformation;
@@ -32,13 +33,15 @@ userInformation;
 
       this.name=result.name;
       this.lastName=result.lastName;
-      this.age=result.age;  
-
+      this.age=25;  
+      
     });
-
+    
+ 
    }
 
   ngOnInit() {
+    
   }
 
   Close(){
@@ -64,6 +67,8 @@ userInformation;
       console.log(error);
     });
 
+
+  
 
   }
 

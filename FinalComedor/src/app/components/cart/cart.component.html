@@ -25,7 +25,7 @@
 <!-- END CONTENT -->
 
 <!-- MODAL -->
-<ng-template #content let-c="close" let-d="dismiss">
+<ng-template #content let-c="close" let-d="dismiss" oncontextmenu="return false;">
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Pago con Tarjeta de Credito</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">

@@ -44,7 +44,8 @@ export class RegisterComponent implements OnInit {
           userId:data.user.uid,
          };
 
-        this.addUser(ObjectRegister);
+        this.addUser(ObjectRegister); debugger;
+        console.log(ObjectRegister);
         this.router.navigateByUrl("/home");
     
       }).catch((error)=>{
