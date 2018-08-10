@@ -1,14 +1,14 @@
 <nav id="sidePadding" class="navbar navbar-light">
-  <span [ngClass]="{'selected': (profileSelected())}" class="icons" routerLink="/profile">
+  <span  class="icons" routerLink="/profile" routerLinkActive="selected" >
     <i class="fas fa-user"></i>Mi Perfil</span>
 
-  <span [ngClass]="{'selected': (homeSelected())}" class="icons" routerLink="/home">
+  <span class="icons" routerLink="/home" routerLinkActive="selected">
     <i class="fas fa-home">home</i></span>
 
-  <span [ngClass]="{'selected': (historySelected())}" class="icons" routerLink="/historial">
+  <span  class="icons" routerLink="/historial" routerLinkActive="selected">
     <i class="fas fa-history">Mis Pedidos</i></span>
 
-  <span [ngClass]="{'selected': (userSelected())}" class="icons" routerLink="/about">
+  <span  class="icons" routerLink="/about" routerLinkActive="selected">
     <i class="fas fa-users">About</i></span>
 
 </nav>
