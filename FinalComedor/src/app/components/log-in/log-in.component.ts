@@ -34,27 +34,25 @@ export class LogInComponent implements OnInit {
    }
 
 
-  login() {
+   login() {
 
     const promise = this.authenticationService.Login(this.email, this.password);
-    
-    console.log(promise);
+    // const promise2 =  this.authenticationService.dataReturn();
     promise.then((data) => {
-
-      alert('Se inicio sesión');
-      this.router.navigateByUrl('/home');
-
+      this.authenticationService.dataReturn().subscribe(datos => {
+       // console.log(datos);
+        datos.subscribe((informacion:any) => {
+          console.log(informacion.lastName);
+          this.router.navigateByUrl('/home');
+        })
+        
+      })
     }).catch((error) => {
 
-      alert('Valio Riel');
+      alert('Error');
       console.log(error);
 
     });
-
-    //#region Binding ngModel " "
-    this.email = '';
-    this.password = '';
-    //#endregion
   }
 
   openVerticallyCentered(content) {
