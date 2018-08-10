@@ -1,6 +1,10 @@
+<div class="img">
+  <img src="assets/img/fondo-login.png" alt="" class="img-home">
+</div>
+<div class="BotNavBar" *ngIf="router.url != '/login'  && router.url != '/register' && router.url != '/pass-recovery'">
+  <app-navbar [itemSelected] = "selected"></app-navbar>
+  </div>
+
 <router-outlet></router-outlet>
 
 <!-- NAVBAR -->
-<div class="BotNavBar" *ngIf="router.url != '/login'  && router.url != '/register' && router.url != '/pass-recovery'">
-  <app-navbar [itemSelected] = "selected"></app-navbar>
-</div>
