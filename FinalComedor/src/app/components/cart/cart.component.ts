@@ -28,6 +28,7 @@ export class CartComponent implements OnInit {
   garrisonItem: any;
   drinkItem: any;
 
+  //Instanciamos todos nuestros servicios en el constructor
   constructor(public stewService: StewService, public drinkService: DrinkService, public router: Router,
     public garrisonService: GarrisonService, private modalService: NgbModal, public cartService: CartService) {
       this.getAllInCart();
@@ -57,6 +58,8 @@ export class CartComponent implements OnInit {
     }
   }
 
+
+ //Validmos el nombre capturado 
   validateName(){
     if( this.valueName.length == 0  ){
       this.vNameMsg = "Ingresar un nombre valido"
@@ -70,7 +73,7 @@ export class CartComponent implements OnInit {
     this.platilosAll = [];
   }
 
-  
+  //Validamos los numeros ingresados
   validateNumber(){
     if( this.valueNumber.toString().length == 0  ){
       this.vNumberMsg = "Ingresar un numero valido";
@@ -83,14 +86,18 @@ export class CartComponent implements OnInit {
   ngOnInit() {
   }
 
+  
   getAllInCart() {
     this.cartArray = this.cartService.showCart();
   }
 
+
+  //integramos toda la informacion para mostrar en el carrito de compras
   prepareMeal() {
     this.cartArray.forEach(id => {
 
       const streamStew = this.stewService.getStewById(id);
+     
       streamStew.valueChanges().subscribe((item) => {
 
         const streamDrink = this.drinkService.getDrinkById(id);
@@ -104,7 +111,7 @@ export class CartComponent implements OnInit {
             drink: item2,
             garrison: item3
             };
-            alert(this.meal);
+          
             this.platilosAll.push(this.meal);
             console.log(this.cartArray);
             console.log(this.platilosAll);
@@ -117,6 +124,7 @@ export class CartComponent implements OnInit {
 
   }
 
+  //Esta funcion nos redirecciona a la pagina dish con el parametro del id
   goToDish(id: number) {
     this.router.navigate(['dish', id]);
   }

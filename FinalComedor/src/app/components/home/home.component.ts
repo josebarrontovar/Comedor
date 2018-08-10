@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
 
   cartArray = [];
 
+  //Instranciamos nuestro servicios
   constructor(public stewService: StewService, public drinkService: DrinkService,
     public garrisonService: GarrisonService, public router: Router, public cartService: CartService) {
       this.prepareMeal();
@@ -30,17 +31,21 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+  //Guardo en streamStew lista todos los platillos
   prepareMeal() {
     const streamStew = this.stewService.getAllStew();
     streamStew.valueChanges().subscribe((list) => {
      this.stewsArray = list;
     });
 
+  //Guardo en stremDrink todas las bebidas
     const streamDrink = this.drinkService.getAllDrinks();
     streamDrink.valueChanges().subscribe((list) => {
       this.drinksArray = list;
     });
 
+    //Guardo en streamStew lista todos los platillos
     const streamGarrison = this.garrisonService.getAllGarrison();
     streamGarrison.valueChanges().subscribe((list) => {
       this.garrisonsArray = list;
@@ -48,6 +53,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  //Nos mostrara todo el menu en home , todo el menu se almacena en platilloAll para mostrar con ngFor
   concat() {
     for (let i = 0; i < this.stewsArray.length; i++) {
         this.meal = {
@@ -60,6 +66,8 @@ export class HomeComponent implements OnInit {
         }
     }
   }
+
+  //Nos redirecciona a la pagina platillos con su paramaetro
   goToDish(id: number) {
     this.router.navigate(['dish', id]);
   }

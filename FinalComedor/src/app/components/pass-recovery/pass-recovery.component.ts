@@ -26,7 +26,7 @@ export class PassRecoveryComponent implements OnInit {
       alert("SE ENVIO CORREO !");
       this.router.navigateByUrl("/login");
     }).catch((error)=>{
-      alert("Valio Riel");
+      alert("No se pudo resetear el error");
       console.log(error);
     });
 

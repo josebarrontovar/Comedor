@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
         this.router.navigateByUrl("/home");
     
       }).catch((error)=>{
-        alert("Valio Riel");
+        alert("No se puedo ");
         console.log(error);
       });
 

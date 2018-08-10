@@ -16,15 +16,17 @@ export class ShoppingService {
 
    //#endregion
 
+   //Instanciamos para poder acceder a las propiedaeds de angularFireDatabase
   constructor(public angularFireDatabase: AngularFireDatabase) { }
 
+  //Funcion para mostrar las compras que tenemos registradas
   getAllShopping() {
     return this.angularFireDatabase.list(this.dataTableShopping );
   }
 
+  //la funcion donde guardamos la compra
   createShopping(shopping){
     console.log(shopping);
-    alert(shopping);
     return this.angularFireDatabase.object(this.dataTableShopping+this.slash+shopping.shoppingId).set(shopping);
   }
 
