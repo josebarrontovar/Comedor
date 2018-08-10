@@ -22,10 +22,22 @@ export class LogInComponent implements OnInit {
 
   constructor(public router: Router, public authenticationService: AuthenticationService, private modalService: NgbModal) {  }
 
+  iniciarSesionConFacebook(){
+  
+     this.authenticationService.loginFacebook().then((facebook) =>{
+       this.router.navigate(['/']);
+     })
+     .catch(err=>{
+       alert(err);
+       console.error(err);
+     })
+   }
+
+
   login() {
 
     const promise = this.authenticationService.Login(this.email, this.password);
-    console.log("LOOOOOOOOOOOG");
+    
     console.log(promise);
     promise.then((data) => {
 
@@ -53,5 +65,7 @@ export class LogInComponent implements OnInit {
   }
 
 
+ 
   
+
 }

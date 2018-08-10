@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 
 @Injectable({
@@ -20,6 +21,12 @@ export class AuthenticationService {
 
   LoginCellPhone(cellPhone,code) {
     return this.angularFireAuth.auth.signInWithPhoneNumber(cellPhone,code);
+  }
+
+  loginFacebook(){
+    return this.angularFireAuth.auth.signInWithPopup(
+      new firebase.auth.FacebookAuthProvider
+    )
   }
 
   resetPassword(email) {
