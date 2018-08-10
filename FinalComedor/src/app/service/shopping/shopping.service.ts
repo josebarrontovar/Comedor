@@ -23,6 +23,7 @@ export class ShoppingService {
   }
 
   createShopping(shopping){
+    console.log(shopping);
     return this.angularFireDatabase.object(this.dataTableShopping+this.slash+shopping.shoppingId).set(shopping);
   }
 

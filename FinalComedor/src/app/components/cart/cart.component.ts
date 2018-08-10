@@ -1,11 +1,11 @@
 import { Router } from '@angular/router';
-import { CartService } from './../cart.service';
+import { CartService } from '../../cart.service';
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { isNumber } from 'util';
-import { StewService } from '../service/stew/stew.service';
-import { GarrisonService } from '../service/garrison/garrison.service';
-import { DrinkService } from '../service/drink/drink.service';
+import { StewService } from '../../service/stew/stew.service';
+import { GarrisonService } from '../../service/garrison/garrison.service';
+import { DrinkService } from '../../service/drink/drink.service';
 
 @Component({
   selector: 'app-cart',

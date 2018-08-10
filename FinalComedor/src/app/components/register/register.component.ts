@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AuthenticationService } from '../service/authentication/authentication.service';
-import { UserService } from '../service/user/user.service';
+import { AuthenticationService } from '../../service/authentication/authentication.service';
+import { UserService } from '../../service/user/user.service';
 import { Router } from '@angular/router';
-import { IUserModel } from '../interface/user';
+import { IUserModel } from '../../interface/user';
 
 
 @Component({

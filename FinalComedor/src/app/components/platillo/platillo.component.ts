@@ -1,12 +1,12 @@
-import { CartService } from './../cart.service';
-import { DrinkService } from './../service/drink/drink.service';
-import { GarrisonService } from './../service/garrison/garrison.service';
-import { StewService } from './../service/stew/stew.service';
+import { CartService } from '../../cart.service';
+import { DrinkService } from '../../service/drink/drink.service';
+import { GarrisonService } from '../../service/garrison/garrison.service';
+import { StewService } from '../../service/stew/stew.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IStweModel } from '../interface/stew';
-import { IGarrisonModel } from '../interface/garrison';
-import { IDrinkModel } from '../interface/drink';
+import { IStweModel } from '../../interface/stew';
+import { IGarrisonModel } from '../../interface/garrison';
+import { IDrinkModel } from '../../interface/drink';
 
 @Component({
   selector: 'app-platillo',

@@ -4,14 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LogInComponent } from './log-in/log-in.component';
-import { AboutComponent } from './about/about.component';
-import { CartComponent } from './cart/cart.component';
-import { HistorialComponent } from './historial/historial.component';
-import { RegisterComponent } from './register/register.component';
-import { PlatilloComponent } from './platillo/platillo.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { AboutComponent } from './components/about/about.component';
+import { CartComponent } from './components/cart/cart.component';
+import { HistorialComponent } from './components/historial/historial.component';
+import { RegisterComponent } from './components/register/register.component';
+import { PlatilloComponent } from './components/platillo/platillo.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 //#region  Service
@@ -21,8 +21,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { PassRecoveryComponent } from './pass-recovery/pass-recovery.component';
-import { ProfileComponent } from './profile/profile.component';
+import { PassRecoveryComponent } from './components/pass-recovery/pass-recovery.component';
+import { ProfileComponent } from './components/profile/profile.component';
 //#endregion
 
 

@@ -1,10 +1,10 @@
-import { CartService } from './../cart.service';
+import { CartService } from '../../cart.service';
 import { Router } from '@angular/router';
-import { GarrisonService } from './../service/garrison/garrison.service';
-import { DrinkService } from './../service/drink/drink.service';
-import { StewService } from './../service/stew/stew.service';
+import { GarrisonService } from '../../service/garrison/garrison.service';
+import { DrinkService } from '../../service/drink/drink.service';
+import { StewService } from '../../service/stew/stew.service';
 import { Component, OnInit } from '@angular/core';
-import { IGarrisonModel } from '../interface/garrison';
+import { IGarrisonModel } from '../../interface/garrison';
 
 @Component({
   selector: 'app-home',

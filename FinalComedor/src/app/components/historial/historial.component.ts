@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ShoppingService } from '../service/shopping/shopping.service';
-import { IShoppingModel } from '../interface/shopping';
+import { ShoppingService } from '../../service/shopping/shopping.service';
+import { IShoppingModel } from '../../interface/shopping';
 
 @Component({
   selector: 'app-historial',

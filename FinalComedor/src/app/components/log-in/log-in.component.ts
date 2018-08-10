@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { AuthenticationService } from '../service/authentication/authentication.service';
+import { AuthenticationService } from '../../service/authentication/authentication.service';
 import { Router } from '@angular/router';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
