@@ -3,36 +3,48 @@
       <div class="row">
        <div class="col-12" style="margin: 0px; padding: 0px;">
          <div class="img">
-           <h3 class="txt-bienvenida">Registro</h3>
-           <img src="assets/img/comida-login.jpg" class="img-login" alt="">
+           <img src="assets/img/fondo-login.png" class="img-login" alt="">
          </div>
         </div>
       </div>
-
-      <div class="content-login">
+      <div class="col-md-4 offset-md-4"style="background:black">
         <div class="row">
-          <div class="col-12">
-           <div class="form-group">
-             <p>Bienvenido</p>
+            <hr>
+            <img src="assets/img/logoComedor2.PNG">
+            <hr>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 offset-md-4" style="background:white">
+        <div class="row">
+          <div class="col-12" style="padding-left: 52px;padding-right: 63px;">
+            <div class="form-group text-center">
+              <h2><b>Registrate</b></h2>
              <input class="form-control" type="text" placeholder="Nombre" [(ngModel)]="name">
              <input class="form-control" type="text" placeholder="Apellido" [(ngModel)]="lastName">
              <input class="form-control" type="text" placeholder="Correo" [(ngModel)]="email">
              <input class="form-control" type="password" placeholder="Contraseña" [(ngModel)]="password">
              <input class="form-control" type="password" placeholder="Repetir Contraseña" [(ngModel)]="passwordCheck">
-             <button class="btn male"><i class="fas fa-male"></i></button>
-             <button class="btn quest"><i class="fas fa-question"></i></button>
-             <button class="btn female"><i class="fas fa-female"></i></button>
+             <div class="col-12">
+              <button class="btn male col-4"><i class="fa fa-mars"></i></button>
+              <button class="btn female col-4"><i class="fa fa-venus"></i></button>
+              <button class="btn quest col-4"><i class="fas fa-question"></i></button>
+             </div>
+             
              
            </div>
          </div>
       </div>
       <div class="row">
-        <div class="col-4"><small class="twitter"><i class="fab fa-twitter"></i></small></div>
-        <div class="col-4"><small class="facebook"><i class="fab fa-facebook-square"></i></small></div>
-        <div class="col-4"><small class="phone"><i class="fas fa-phone"></i></small></div>
+        <button style="margin-left: 52px;margin-right: 61px;background:#000;color:white;border: 0px;" type="button" class="btn btn-primary btn-lg btn-block">Inisiar Sesión</button>
       </div>
-      <button class="btn btn-success" (click)="Register()">Registrarme</button><br>
-      <small><a  routerLink="/login">Inicio</a></small>
+      <div class="row">
+        <a style="margin-left: 52px;margin-right: 61px;background:white;color:black;border: solid;" class="btn btn-primary btn-lg btn-block" routerLink="/login" role="button">Volver al Inicio</a>      
+      </div >
+      
+      
     </div>
       
   </div>

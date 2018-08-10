@@ -1,35 +1,65 @@
-<div class="content">
+<div class="content" style="margin-top:50px">
   <div class="container-fluid" >
       <div class="row">
        <div class="col-12" style="margin: 0px; padding: 0px;">
          <div class="img">
-           <h3 class="txt-bienvenida">Inicio</h3>
-           <img src="assets/img/comida-login.jpg" class="img-login" alt="">
+
+           <img src="assets/img/fondo-login.png" class="img-login" alt="">
          </div>
+
         </div>
       </div>
-
-      <div class="content-login">
+      <div class="col-md-4 offset-md-4"style="background:black">
         <div class="row">
-          <div class="col-12">
-           <div class="form-group">
-             <p>Bienvenido</p>
-             <input class="form-control" type="text" placeholder="Correo" [(ngModel)]="email">
-             <input class="form-control" type="password" placeholder="Contraseña" [(ngModel)]="password">
-           </div>
+            <hr>
+            <img src="assets/img/logoComedor2.PNG">
+            <hr>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 offset-md-4" style="background:white">
+        <div class="row">
+
+          <div class="col-12" style="padding-left: 52px;padding-right: 63px;">
+           <div class="form-group text-center">
+             <h2><b>Inisiar Sesión</b></h2>
+             <!-- <input class="form-control" type="text" placeholder="Correo" [(ngModel)]="email">
+             <input class="form-control" type="password" placeholder="Contraseña" [(ngModel)]="password"> -->
+             <!-- user -->
+             <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span style="" class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <!-- password -->
+              <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+            </div>
          </div>
       </div>
       <div id="fb-root"></div>
-      <div class="row">
-        <div class="col-4"><p><i class="fab fa-twitter"></i></p></div>
-        <div class="col-4"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-        </div>
-        <div class="col-4"><p alt="" (click)="openVerticallyCentered(content)" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><i class="fas fa-phone"></i></p></div>
+      <div class="row " >
+        <!-- <div class="col-4"><div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        </div> -->
+        <button style="margin-left: 52px;margin-right: 61px;background:#3C5899;color:white" type="button" class="btn  btn-lg btn-block"><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;Iniciar Con Facebook</button>
       </div>
-      <button class="btn btn-success" (click)="login()">Enviar</button><br>
-      <small><a  routerLink="/register">Registro</a></small> | <small><a routerLink="/pass-recovery">Olvide la contraseña</a></small>
+      <div class="row ">
+        <!-- <button class="btn btn-success " (click)="login()">Enviar</button><br>
+        <small><a  routerLink="/register">Registro</a></small> | <small><a routerLink="/pass-recovery">Olvide la contraseña</a></small> -->
+        <button style="margin-left: 52px;margin-right: 61px;background:#000;color:white;border: 0px;" type="button" class="btn btn-primary btn-lg btn-block">Inisiar Sesión</button>
+      </div>
+      <div class="row">
+        <a style="margin-left: 52px;margin-right: 61px;background:white;color:black;border: solid;" class="btn btn-primary btn-lg btn-block"  routerLink="/register" role="button">Registrate</a>      
+      </div >
     </div>
-      
+
   </div>
 </div>
 
@@ -42,7 +72,7 @@
     </div>
     <div class="modal-body">
       <input type="text" placeholder="Telefono" class="form-control">
-           
+
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-success" (click)="c('Close click')" alt="" (click)="openVerticallyCentered(content1)" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">Siguiente</button>
@@ -58,11 +88,10 @@
       </div>
       <div class="modal-body">
         <input type="text" placeholder="Clave" class="form-control">
-             
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" (click)="c('Close click')">Ingresar</button>
       </div>
     </ng-template>
-    
-  
+
