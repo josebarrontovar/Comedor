@@ -104,6 +104,7 @@ export class CartComponent implements OnInit {
             drink: item2,
             garrison: item3
             };
+            alert(this.meal);
             this.platilosAll.push(this.meal);
             console.log(this.cartArray);
             console.log(this.platilosAll);

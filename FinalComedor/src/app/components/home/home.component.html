@@ -2,24 +2,44 @@
   <div class="row">
     <div class="col-12 col">
       <div class="img">
-          <img src="assets/img/comida-login.jpg" alt="" class="img-home">
+          <img src="assets/img/fondo-login.png" alt="" class="img-home">
       </div>
       <div class="col-12"> 
-        <h4 class="display-4">Bienvenido</h4>
+        <h4 class="display-4">Menu</h4>
         <p class="lead"><hr class="my-4">
         <p *ngIf="cartArray.length != 0" routerLink="/shoppingcart" style="background-color: lightgreen; text-align: center;">IR AL CARRITO</p> 
       </div>
-      <div class="col-12 marTop20" *ngFor="let platillo of platiloAll; let i = index" (click)="goToDish(i)">
-        <div class="card">
-          <div class="img2">
-            <img class="card-img-top img-fluid img-card img-home" [src]="platillo.stew.image" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h5>{{platillo.stew.name}}</h5>
-            <p>Servida con {{platillo.garrison.name}} y {{platillo.drink.name}}</p>
+      <div class="row">
+      
+        <div class="col-sm-4 marTop20"  *ngFor="let platillo of platiloAll; let i = index" >
+          <div class="card">
+            <div class="img2">
+              <img class="card-img-top img-fluid img-card img-home" [src]="platillo.stew.image" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5>{{platillo.stew.name}}</h5>
+              <p>Servida con {{platillo.garrison.name}} y {{platillo.drink.name}}</p>
+              <a (click)="goToDish(i)" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Comprar</a>
+            </div>
           </div>
         </div>
       </div>
+    
+
+    <!-- <div class="row">
+      <div class="col-sm-4" *ngFor="let platillo of platiloAll; let i = index">  
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src={{platillo.stew.image}} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{platillo.stew.name}}</h5>
+                <p>Servida con {{platillo.garrison.name}} y {{platillo.drink.name}}</p>
+                
+            </div>
+        </div>
+    </div>
+    </div> -->
+    
+      
       
     </div>
   </div>
