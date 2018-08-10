@@ -25,21 +25,21 @@
           <div class="col-12" style="padding-left: 52px;padding-right: 63px;">
            <div class="form-group text-center">
              <h2><b>Iniciar Sesión</b></h2>
-             <!-- <input class="form-control" type="text" placeholder="Correo" [(ngModel)]="email">
+             <!-- <input class="form-control" type="text" placeholder="Correo" >
              <input class="form-control" type="password" placeholder="Contraseña" [(ngModel)]="password"> -->
              <!-- user -->
              <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
-                  <span style="" class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-user"></i></span>
+                  <span  class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="email">
               </div>
               <!-- password -->
               <div class="input-group input-group-sm mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fas fa-key"></i></span>
                   </div>
-                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="password">
                 </div>
             </div>
          </div>
@@ -51,9 +51,9 @@
         <button style="margin-left: 52px;margin-right: 61px;background:#3C5899;color:white" type="button" class="btn  btn-lg btn-block"><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;Iniciar Con Facebook</button>
       </div>
       <div class="row ">
-        <!-- <button class="btn btn-success " (click)="login()">Enviar</button><br>
+        <!-- <button class="btn btn-success " >Enviar</button><br>
         <small><a  routerLink="/register">Registro</a></small> | <small><a routerLink="/pass-recovery">Olvide la contraseña</a></small> -->
-        <button style="margin-left: 52px;margin-right: 61px;background:#000;color:white;border: 0px;" type="button" class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
+        <button style="margin-left: 52px;margin-right: 61px;background:#000;color:white;border: 0px;" type="button" class="btn btn-primary btn-lg btn-block" (click)="login()">Iniciar Sesión</button>
       </div>
       <div class="row">
         <a style="margin-left: 52px;margin-right: 61px;background:white;color:black;border: solid;" class="btn btn-primary btn-lg btn-block"  routerLink="/register" role="button">Registrate</a>      

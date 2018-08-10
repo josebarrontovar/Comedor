@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "AIzaSyD4iB6vDydo-En0bbAS4C5fPwXeiNdzRqM",
-    authDomain: "comedor-n.firebaseapp.com",
-    databaseURL: "https://comedor-n.firebaseio.com",
-    projectId: "comedor-n",
-    storageBucket: "comedor-n.appspot.com",
-    messagingSenderId: "143253782132"
+    apiKey: "AIzaSyBZNOj3oFn7J8emBNu-Zpp_S4hz5lM1iVE",
+    authDomain: "comedor-2d902.firebaseapp.com",
+    databaseURL: "https://comedor-2d902.firebaseio.com",
+    projectId: "comedor-2d902",
+    storageBucket: "",
+    messagingSenderId: "398047808884"
   },
 };
 
