@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.img-profile{
+/* .img-profile{
     position:absolute;
     left: -100%;
     right: -100%;
@@ -13,7 +13,7 @@
     min-height: 100%;
     min-width: 100%;
     z-index: 0;
-}
+} */
 
 .img2{
     width: 100%;
@@ -43,4 +43,18 @@
 
 .card{
     border: none;
+}
+.img{
+    text-align: center;
+}
+
+.img-login{
+    position:fixed;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
 }
