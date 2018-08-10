@@ -1,13 +1,20 @@
-<div class="content">
+<div class="content" style="background:red">
   <div class="container-fluid">
     <div class="row">
+        
       <div class="col-12 col">
+        
         <div class="card">
-          <div class="img2">
-              <img class="card-img-top img-fluid img-card img-profile" src="assets/img/comida-login.jpg" alt="Card image cap">
-          </div>
-          <button class="btn btn-camera"><i class="fas fa-camera"></i></button>
-          <div class="card-body">
+            <div class="col-md-4 offset-md-4" style="border: solid;border-color: black;">
+                <div class="row">
+                    <hr>
+                    <img style="border-radius: 60px;width: 120px;height: 120px;"src="assets/img/defaul.png">
+                    <hr>
+        
+                </div>
+        
+              </div>
+          <div class="card-body col-md-4 offset-md-4" style="border: solid;border-color: black;">
             <input  class="form-control" type="text"  placeholder="Nombre" [(ngModel)]="name">
             <input  class="form-control" type="text"  placeholder="Apellido" [(ngModel)]="lastName">
             <input  class="form-control" type="number" placeholder="Edad" [(ngModel)]="age">
@@ -17,11 +24,18 @@
               <option value="">Hombre</option>
               <option value="">Indefinido</option>
             </select>
-            <button class="btn btn-success" (click)="UpdateUser()" >Guardar</button>
+            <!-- <button class="btn btn-success" (click)="UpdateUser()" >Guardar</button>
             <br>
    
             <br>
-            <button class="btn btn-success" (click)="Close()" >Salir</button>
+            <button class="btn btn-success" (click)="Close()" >Salir</button> -->
+            <div class="row ">
+                <button style="margin-left: 52px;margin-right: 61px;background:#000;color:white;border: 0px;" type="button" class="btn btn-primary btn-lg btn-block" (click)="UpdateUser()" >Guardar</button>
+              </div>
+              <!-- <br> -->
+              <div class="row" style="padding-top:10px;">
+                <a style="margin-left: 52px;margin-right: 61px;background:white;color:black;border: solid;" class="btn btn-primary btn-lg btn-block"   role="button" (click)="Close()" >Salir</a>      
+              </div >
           </div>
         </div>
       </div>
