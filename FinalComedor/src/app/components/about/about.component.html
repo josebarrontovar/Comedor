@@ -1,72 +1,73 @@
 <ngb-carousel *ngIf="images" class="img-responsive" oncontextmenu="return false;">
 
-  <ng-template ngbSlide>
-    <img src="assets/images/1.png" class="imgCenter" alt="Cinque Terre">
-    <div class="carousel-caption">
-
+    <div class="fontTitle">
+      Bienvenidos
     </div>
-  </ng-template>
 
-  <ng-template ngbSlide>
-    <img src="assets/images/2.png" class="imgCenter" alt="Random second slide">
-    <div class="carousel-caption">
+    <div class="fontSubTitle">
+      We are The Dream Team
     </div>
-  </ng-template>
-
-  <ng-template ngbSlide>
-    <img src="assets/images/3.png" class="imgCenter" alt="Random third slide">
-    <div class="carousel-caption">
-    </div>
-  </ng-template>
-
-  <ng-template ngbSlide>
-    <img src="assets/images/4.png" class="imgCenter" alt="Random third slide">
-    <div class="carousel-caption">
-    </div>
-  </ng-template>
-
-  <ng-template ngbSlide>
-    <img src="assets/images/5.png" class="imgCenter" alt="Random third slide">
-    <div class="carousel-caption">
-    </div>
-  </ng-template>
-
-</ngb-carousel>
-
-  <div class="container">
-    <div class="container-fluid">
-
-<div class="fontTitle">
-  Welcome
-</div>
-
-<div class="fontSubTitle">
-  We are Team #1, we are very pleased to see you here...
-</div>
-
-
-
-    
     <hr>
-    <div class="fontMembers">
-      Members:
-    </div>
-
-    <div class="textCommun">
-      El Horacio
-      <br> Jose Barron
-      <br> Ricardo Tovar
-      <hr>
-    </div>
-      <div class="fontContact " style="display: inline;">
-          Contact:
-        </div>
-        <div class="row centerImg" >
-            <div class="col-4 "><p><i class="fab fa-twitter "></i></p></div>
-            <div class="col-4 "><p><i class="fab fa-facebook-square"></i></p></div>
-            <div class="col-4 "><p alt="" (click)="openVerticallyCentered(content)" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample"><i class="fas fa-phone"></i></p></div>
+    <!-- chefts -->
+    <div class="col-12">
+      <div class="row">
+        <div class="col-sm-4 marTop20">
+          <div class="card">
+            <div class="img2">
+              <img class="card-img-top img-fluid img-card img-home" src="assets/img/elricky.jpg">
+            </div>
+            <div class="card-body">
+              <h5>Ricardo Sauceda</h5>
+              <p></p>
+            </div>
           </div>
-      
-    
+        </div>
+        <div class="col-sm-4 marTop20">
+          <div class="card">
+            <div class="img2">
+              <img class="card-img-top img-fluid img-card img-home" src="assets/img/barron.jpg">
+            </div>
+            <div class="card-body">
+              <h5>Jose Barron Tovar</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 marTop20">
+          <div class="card">
+            <div class="img2">
+              <img style="
+                      height: 326px;" class="card-img-top img-fluid img-card img-home" src="assets/img/tiohoracio.jpg">
+            </div>
+            <div class="card-body">
+              <h5>Horacio Chaires Rodriguez</h5>
+              <p>El Chef Horacio Chaires Rodriguez Ganador de barios premiso como el de el mejor parcticante</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- fin cheft -->
+          <!-- contactos -->
+    <div class="fontContact " style="display: inline;">
+      Contact:
+    </div>
+    <div class="row centerImg">
+      <div class="col-4 ">
+        <p>
+          <i class="fab fa-twitter "></i>
+        </p>
+      </div>
+      <div class="col-4 ">
+        <p>
+          <i class="fab fa-facebook-square"></i>
+        </p>
+      </div>
+      <div class="col-4 ">
+        <p alt="" (click)="openVerticallyCentered(content)" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+          <i class="fas fa-phone"></i>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
