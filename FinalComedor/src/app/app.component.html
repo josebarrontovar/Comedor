@@ -1,16 +1,16 @@
+<!-- imagen Nav bar -->
 <div class="col-md-12 "style="background:black">
     <div class="row">
         <hr>
         <img src="assets/img/logoComedor2.PNG">
         <hr>
-
     </div>
-
   </div>
+  <!-- img navbar -->
+  <!-- NAVBAR -->
 <div class="BotNavBar" *ngIf="router.url != '/login'  && router.url != '/register' && router.url != '/pass-recovery'">
-  <app-navbar [itemSelected] = "selected"></app-navbar>
+  <app-navbar></app-navbar>
   </div>
-
 <router-outlet></router-outlet>
 
 <!-- NAVBAR -->

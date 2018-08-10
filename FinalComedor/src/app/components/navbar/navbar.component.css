@@ -1,4 +1,5 @@
 #sidePadding{
+    
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: .1px .1px 1px #88888846;
@@ -27,9 +28,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin: 0 8vw;
 }
 .selected{
-    color: black;
+    color: white;
     font-size: 1.5em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     margin-left: 55px;
     margin-right: 55px;
 }
